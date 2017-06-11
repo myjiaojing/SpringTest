@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:scope="http://www.jiaojing.com/schema/scope" xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.jiaojing.com/schema/scope http://www.jiaojing.com/schema/scope.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <bean id="myModel" class="com.jiaojing.L005.Model" scope="thread"/>
+    <!--必须要有一个id，否则会报Configuration problem: Id is required for element 'thread' when used as a top-level tag的错误..-->
+    <scope:thread id="threadscope"/>
+    <!--place holder test begin-->
+    
+
+</beans>

@@ -4,6 +4,14 @@
        xmlns:scope="http://www.jiaojing.com/schema/scope" xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
        http://www.jiaojing.com/schema/scope http://www.jiaojing.com/schema/scope.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+   
+    
+    
+    
+    <bean id="dosomething" class="com.jiaojing.homework007.DoSomething" />
+    <bean  class="com.jiaojing.homework007.MyPostProcessor" />
+    
+     <!--scope-->
     <bean id="myModel" class="com.jiaojing.L005.Model" scope="thread"/>
    
     <scope:thread id="threadscope"/>
@@ -15,6 +23,12 @@
         <property name="password" value="${password}" />
     </bean>
     <bean id="password_handler" class="com.jiaojing.L006Placeholder.PasswordPostProcessor" />
+    
+    
+    
+    
+    
+   
     
 
 </beans>
